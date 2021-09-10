@@ -1,0 +1,21 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+
+    &__cards {
+        display: flex;
+        justify-content: space-around;
+
+        &__contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__select {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    }
+}

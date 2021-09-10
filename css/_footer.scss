@@ -1,0 +1,12 @@
+.footer {
+    background-color: bisque;
+
+    &__barraRedesSociales {
+        &__logos {
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+}
