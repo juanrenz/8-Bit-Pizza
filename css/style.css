@@ -19,6 +19,15 @@ body {
           flex-direction: column;
 }
 
+.principal__contenedorBotones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0.313rem;
+}
+
 .principal__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +68,17 @@ body {
 
 .footer {
   background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 00.313rem;
+}
+
+.footer__barraRedesSociales__logos {
+  margin: 00.313rem;
 }
 
 .footer__barraRedesSociales__logos img {

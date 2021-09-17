@@ -2,6 +2,16 @@
     display: flex;
     flex-direction: column;
 
+    &__contenedorBotones{
+        display: flex;
+        justify-content: space-around;
+        margin: 0.313rem;
+
+        &__boton{
+
+        }
+    }
+
     &__cards {
         display: flex;
         justify-content: space-around;

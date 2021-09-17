@@ -1,8 +1,14 @@
 .footer {
     background-color: bisque;
+    display: flex;
+    justify-content: center;
+    margin: 00.313rem;
 
     &__barraRedesSociales {
+
         &__logos {
+            margin: 00.313rem;
+
             img {
                 height: 30px;
                 width: 30px;
