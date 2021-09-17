@@ -1,31 +1,19 @@
-productos = [
-    
-    producto1 = {
-        id: 1,
-        nombre: 'Queso',
-        precio: 30,
-
-    },
-
-    producto2 = {
-        id: 2,
-        nombre: 'Cebolla',
-        precio: 50,
-    },
-
-    producto3 = {
-        id: 3,
-        nombre: 'Salsa de tomate',
-        precio: 50,
-    },
-
-    producto4 = {
-        id: 4,
-        nombre: 'Queso Azul',
-        precio: 80,
+class Producto{
+    constructor(id, nombre, precio, caracteristica) {
+        this.id = id;
+        this.nombre   = nombre;
+        this.precio  = precio;
+        this.caracteristica = caracteristica;
+        this.detalles = function () {alert(caracteristica)}
     }
+}
 
-];
+const productos = [];
+
+productos.push(new Producto ("1", "Queso Azul", 50, "Queso Azul gratinado sobre mozzarella"));
+productos.push(new Producto ("2", "Cebolla", 30, "Cebolla a la plancha"));
+productos.push(new Producto ("3", "Salsa", 20, "Elige tu preferida!"));
+productos.push(new Producto ("4", "Anchoas", 100, "Anchoas sobre tu pizza"));
 
 let total = 0;
 let  ingrediente= [];
@@ -59,23 +47,27 @@ function start() {
 
 
 function agregarIngrediente(){
-    let agregar = parseInt(prompt("Seleccione el ingrediente a agregar \n\n 1- Queso \n 2- Cebolla \n 3- Salsa de Tomate \n 4- Queso Azul"))
+    let agregar = parseInt(prompt("Seleccione el ingrediente a agregar \n\n1- " + productos[0].nombre + "\n2- " + productos[1].nombre + "\n3- " + productos[2].nombre + "\n4- " + productos[3].nombre))
 
     switch (agregar) {
         case 1:
         ingrediente.push(productos[agregar - 1])
+        productos[0].detalles()
         break;
 
         case 2:
         ingrediente.push(productos[agregar - 1])
+        productos[1].detalles()
         break;
 
         case 3:
         ingrediente.push(productos[agregar - 1])
+        productos[2].detalles()
         break;
 
         case 4:
         ingrediente.push(productos[agregar - 1])
+        productos[3].detalles()
         break;
     
         default:
@@ -90,14 +82,18 @@ function calcularTotal(){
 
     for (let i = 0; i < ingrediente.length; i++) {
         total = total + ingrediente[i].precio 
+    }if (total !== 0) {
+        console.log("El total a abonar es: " + total.toFixed(2) + "\n\n Gracias por tu compra!" )
+        alert("El total a abonar es: " + total.toFixed(2) + "\n\n Gracias por tu compra!" )
+    }else{
+        alert("Tu carrito esta vacio, agrega un ingrediente!")
     }
-    console.log("El total a abonar es: " + total.toFixed(2) + "\n\n Gracias por tu compra!" )
-    alert("El total a abonar es: " + total.toFixed(2) + "\n\n Gracias por tu compra!" )
-}
+    
+};
 
 function mostrarCarrito() {
     console.log(ingrediente)
-}
+};
 
 
 
