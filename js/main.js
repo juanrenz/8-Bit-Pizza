@@ -1,37 +1,62 @@
-class Producto {
-    constructor(id, nombre, precio, caracteristica) {
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.caracteristica = caracteristica;
-        this.detalles = function () { alert(caracteristica) }
+let carritoDeCompras = [];
+
+const contenedorProductos = document.getElementById("principal");
+const contenedorCarrito = document.getElementById("carrito-contenedor");
+
+const contadorCarrito = document.getElementById("contadorCarrito");
+const precioTotal = document.getElementById("precioTotal")
+
+for (let i = 0; i < productos.length; i++){
+    let boton = document.getElementById(`boton${productos[i].id}`)
+    boton.addEventListener("click",()=>{
+        agregarAlCarrito(productos[i].id)
+    })
+};
+
+
+function agregarAlCarrito(id) {
+    let repetido = carritoDeCompras.find(prodR => prodR.id == id);
+    if(repetido){
+        repetido.cantidad = repetido.cantidad + 1;
+        document.getElementById(`cantidad${repetido.id}`).innerHTML = `<p id="cantidad${repetido.id}">cantidad: ${repetido.cantidad}</p>`
+        actualizarCarrito()
+    }else{
+        let productoAgregar = productos.find(prod => prod.id == id);
+
+        carritoDeCompras.push(productoAgregar);
+
+        productoAgregar.cantidad = 1;
+        actualizarCarrito()
+        let div = document.createElement('div')
+        div.classList.add('productoEnCarrito')
+        div.innerHTML = `<p>${productoAgregar.nombre}</p>
+                        <p>Precio: ${productoAgregar.precio}</p>
+                        <p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>
+                        <button id="eliminar${productoAgregar.id}" class="boton-eliminar"><img src="https://w7.pngwing.com/pngs/392/540/png-transparent-pixel-c-pixel-art-waste-openbsd-garbage-miscellaneous-angle-furniture.png" alt="boton-eliminar" srcset=""></button>`
+        contenedorCarrito.appendChild(div)
+        
+        let botonEliminar = document.getElementById(`eliminar${productoAgregar.id}`)
+
+        botonEliminar.addEventListener('click', ()=>{
+            botonEliminar.parentElement.remove()
+            carritoDeCompras = carritoDeCompras.filter(prodE => prodE.id != productoAgregar.id)
+            actualizarCarrito()
+        }) 
     }
+    
 }
 
-const productos = [];
 
-productos.push(new Producto("1", "Queso Azul", 50, "Queso Azul gratinado sobre mozzarella"));
-productos.push(new Producto("2", "Cebolla", 30, "Cebolla a la plancha"));
-productos.push(new Producto("3", "Salsa", 20, "Elige tu preferida!"));
-productos.push(new Producto("4", "Anchoas", 100, "Anchoas sobre tu pizza"));
-
-let contenedor = document.getElementById("principal")
-let acumulador = "";
-
-
-for (let i = 0; i < productos.length; i++) {
-
-    acumulador += `<div class="principal__cards__contenedor">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwy1aUOF5yO-8x5JhprUk2Oe9aPkUEZKf5VLka8cyS6v14XtpyZfo8EPSTwH3YQPa68Lk&usqp=CAU" alt="Card image cap">
-                        <div class="card-body">
-                            <h3> Producto: ${productos[i].nombre} </h3>
-                            <p> ${productos[i].caracteristica} </p>
-                            <b> $ ${productos[i].precio} </b>;
-                        </div>
-                    </div>
-                </div>`;
+function actualizarCarrito() {
+   contadorCarrito.innerText = carritoDeCompras.reduce((acc, el)=> acc + el.cantidad,0);
+   precioTotal.innerText = carritoDeCompras.reduce((acc,el)=> acc + (el.precio * el.cantidad),0)
 }
 
-contenedor.innerHTML = acumulador;
+let botonVaciar = document.getElementById("vaciarCarrito");
+botonVaciar.addEventListener("click", vaciarCarrito);
 
+function vaciarCarrito() {
+    carritoDeCompras = [];
+    contenedorCarrito.innerHTML = "";
+    actualizarCarrito();
+}
