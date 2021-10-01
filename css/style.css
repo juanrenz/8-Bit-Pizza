@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
 }
 
 body {
@@ -62,8 +63,45 @@ body {
   height: 30px;
 }
 
+.modal-carrito {
+  display: none;
+}
+
 .header {
   background-color: bisque;
+  margin: 0.313rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.header__boton button {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.header__boton button img {
+  width: 50px !important;
+  height: 45px !important;
+  margin: 0.15rem !important;
+  margin-right: 0.313rem !important;
 }
 
 .footer {

@@ -29,7 +29,7 @@ for (let i = 0; i < productos.length; i++) {
                         <div class="card-body">
                             <h3> Producto: ${productos[i].nombre} </h3>
                             <p> ${productos[i].caracteristica} </p>
-                            <b> $ ${productos[i].precio} </b>;
+                            <b> $ ${productos[i].precio} </b>
                         </div>
                         <button id=boton${productos[i].id} type="button" class="btn btn-outline-warning ">Agregar</button>
                     </div>

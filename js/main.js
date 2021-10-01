@@ -58,5 +58,6 @@ botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
     carritoDeCompras = [];
     contenedorCarrito.innerHTML = "";
+    alert("Se vació tu carrito")
     actualizarCarrito();
 }
