@@ -11,7 +11,13 @@ body {
   height: 100%;
 }
 
-#principal {
+.sectionIngredientes {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sectionIngredientes #principal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,12 +33,13 @@ body {
   background-color: #ecca08;
   margin-left: 8rem;
   margin-right: 8rem;
+  margin-top: 1rem;
   padding: 1rem;
   border: 5px double black;
   border-radius: 30px;
 }
 
-#principal__cards {
+.sectionIngredientes #principal .principal__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +47,7 @@ body {
       justify-content: space-around;
 }
 
-#principal__cards__contenedor {
+.sectionIngredientes #principal .principal__cards__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +58,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1rem;
 }
 
 .boton-eliminar img {
@@ -104,6 +112,16 @@ body {
   margin-right: 0.313rem !important;
 }
 
+.navbar {
+  background-color: #ecca08;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
+}
+
 .footer {
   background-color: bisque;
   display: -webkit-box;
@@ -122,5 +140,16 @@ body {
 .footer__barraRedesSociales__logos img {
   height: 30px;
   width: 30px;
+}
+
+.page-section {
+  background-color: #ecca08;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */

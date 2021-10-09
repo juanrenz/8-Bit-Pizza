@@ -60,3 +60,40 @@ function vaciarCarrito() {
     contenedorCarrito.innerHTML = "";
     actualizarCarrito();
 }
+
+/* FORM */
+
+$("#contactForm").submit(enviar);
+let formulario = [];
+
+function enviar(e) {
+    e.preventDefault();
+    /*capturando valores del input*/
+    let nombre= $("#name").val();
+    let email = $("#email").val();
+    let celular = $("#phone").val();
+    let mensaje = $("#message").val();
+
+    console.log(nombre);
+    console.log(email);
+    console.log(celular);
+    console.log(mensaje);
+
+    let contacto = {
+        nombre,
+        email,
+        celular,
+        mensaje
+    }
+
+    if (localStorage.getItem('contacto') === null) {
+        formulario.push(contacto)
+        localStorage.setItem('contacto', JSON.stringify(formulario));
+    } else {
+        let contacto = JSON.parse(localStorage.getItem('contacto'));
+        formulario.push(contacto)
+        localStorage.setItem('contacto', JSON.stringify(formulario));
+    }
+    
+    $("#contactForm").trigger("reset");
+}
