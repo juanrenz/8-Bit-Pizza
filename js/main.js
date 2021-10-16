@@ -96,4 +96,4 @@ function enviar(e) {
     }
     
     $("#contactForm").trigger("reset");
-}
+} 

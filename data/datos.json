@@ -1,0 +1,163 @@
+[
+	{
+	 "id": 1,
+	 "nombre":"Mozzarella",
+	 "precio": 50,
+	 "caracteristica": "", 
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 2,
+	 "nombre": "Roquefort",
+	 "precio": 60,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1 
+	},
+
+	{
+	 "id": 3,
+	 "nombre": "Cheddar",
+	 "precio": 50,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 4,
+	 "nombre": "Salsa de tomate",
+	 "precio": 30,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1 
+	},
+
+	{
+	 "id": 5,
+	 "nombre": "Salsa Blanca",
+	 "precio": 50,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 6,
+	 "nombre": "Panceta",
+	 "precio": 80,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1 
+	},
+
+	{
+	 "id": 7,
+	 "nombre": "Huevo",
+	 "precio": 20,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1 
+	},
+
+	{
+	 "id": 8,
+	 "nombre": "Champignones",
+	 "precio": 60,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+	
+	{
+	 "id": 9,
+	 "nombre": "Espinaca",
+	 "precio": 30,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 10,
+	 "nombre": "Pepperoni",
+	 "precio": 50,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 11,
+	 "nombre": "Cebolla",
+	 "precio": 15,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 12,
+	 "nombre": "Pimientos",
+	 "precio": 30,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 13,
+	 "nombre": "Pollo",
+	 "precio": 70,
+	 "caracteristica": "",  
+	 "img": "",  
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 14,
+	 "nombre": "Verduras Asadas",
+	 "precio": 40,
+	 "caracteristica": "", 
+	 "img": "", 
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 15,
+	 "nombre": "Jamon",
+	 "precio": 35,
+	 "caracteristica": "", 
+	 "img": "", 
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 16,
+	 "nombre": "Tomate Deshidratado",
+	 "precio": 30,
+	 "caracteristica": "", 
+	 "img" : "", 
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 17,
+	 "nombre": "Aceitunas",
+	 "precio": 10,
+	 "caracteristica": "", 
+	 "img": "", 
+	 "cantidad": 1
+	},
+
+	{
+	 "id": 18,
+	 "nombre": "Palmitos",
+	 "precio": 40,
+	 "caracteristica": "", 
+	 "img": "", 
+	 "cantidad": 1
+	}
+]
