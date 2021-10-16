@@ -26,17 +26,25 @@ const guardarStorage = (clave, valor) => { localStorage.setItem(clave, valor) };
 
 guardarStorage("ingredientes", JSON.stringify(productos));
 
-for (let i = 0; i < productos.length; i++) {
-
-    $("#principal").prepend( `<div class="principal__cards__contenedor">
-                    <div class="card" style="width: 23rem;">
-                        <img class="card-img-top" src="${productos[i].img}" alt="Card image cap">
-                        <div class="card-body">
-                            <h3> ${productos[i].nombre} </h3>
-                            <p> ${productos[i].caracteristica} </p>
-                            <b> $ ${productos[i].precio} </b>
-                        </div>
-                        <button id=boton${productos[i].id} type="button" class="btn btn-outline-warning ">Agregar</button>
-                    </div>
-                </div>`);
+function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        for (let i = 0; i < productos.length; i++) {
+            $("#principal").prepend( `<div class="principal__cards__contenedor">
+                            <div class="card" style="width: 23rem;">
+                                <img class="card-img-top" src="${productos[i].img}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h3> ${productos[i].nombre} </h3>
+                                    <p> ${productos[i].caracteristica} </p>
+                                    <b> $ ${productos[i].precio} </b>
+                                </div>
+                                <button id=boton${productos[i].id} type="button" class="btn btn-outline-warning ">Agregar</button>
+                            </div>
+                        </div>`)
+        };
+    }
+    xhttp.open("GET", "data/datos.json", true);
+    xhttp.send();
 }
+
+loadDoc();
