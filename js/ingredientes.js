@@ -4,6 +4,7 @@ const guardarStorage = (clave, valor) => { localStorage.setItem(clave, valor) };
 
 $.getJSON(JSONIngredientes, function (respuesta, estado) {
     if(estado === "success"){
+
         let ingredientes = respuesta
 
         for (let i = 0; i < ingredientes.length; i++) {
@@ -20,9 +21,8 @@ $.getJSON(JSONIngredientes, function (respuesta, estado) {
                                     </div>`);
 
             productos.push(ingredientes[i]);
-            guardarStorage("ingredientes", JSON.stringify(productos));
-            
         }
+        guardarStorage("ingredientes", JSON.stringify(productos));
     }
 })
 
