@@ -38,7 +38,7 @@ function loadDoc() {
                                     <p> ${productos[i].caracteristica} </p>
                                     <b> $ ${productos[i].precio} </b>
                                 </div>
-                                <button id=boton${productos[i].id} type="button" class="btn btn-outline-warning ">Agregar</button>
+                                <button id=boton${productos[i].id} onclick="agregarAlCarrito(${productos[i].id})" type="button" class="btn btn-outline-warning ">Agregar</button>
                             </div>
                         </div>`)
         };
