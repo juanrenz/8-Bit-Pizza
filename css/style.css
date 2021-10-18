@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(https://cdn.wallpapersafari.com/25/41/y2ZOW9.png);
+  background-image: url(https://i.pinimg.com/originals/fe/ac/ba/feacba1462010c0794de4c3fb7a11ea1.jpg);
   background-size: cover;
   height: 100%;
 }
@@ -59,6 +59,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1rem;
+}
+
+.btn {
+  display: none;
 }
 
 .boton-eliminar img {
@@ -151,5 +155,150 @@ body {
   padding: 1rem;
   border: 5px double black;
   border-radius: 30px;
+}
+
+.eightbit-btn {
+  background: #92cd41;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: "Press Start 2P", cursive;
+  text-decoration: none;
+  color: white;
+  -webkit-box-shadow: inset -4px -4px 0px 0px #4aa52e;
+          box-shadow: inset -4px -4px 0px 0px #4aa52e;
+}
+
+.eightbit-btn:hover, .eightbit-btn:focus {
+  background: #76c442;
+  -webkit-box-shadow: inset -6px -6px 0px 0px #4aa52e;
+          box-shadow: inset -6px -6px 0px 0px #4aa52e;
+  text-decoration: none;
+  color: darkgray;
+}
+
+.eightbit-btn:active {
+  -webkit-box-shadow: inset 4px 4px 0px 0px #4aa52e;
+          box-shadow: inset 4px 4px 0px 0px #4aa52e;
+}
+
+.eightbit-btn:before, .eightbit-btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.eightbit-btn:before {
+  top: -6px;
+  left: 0;
+  border-top: 6px black solid;
+  border-bottom: 6px black solid;
+}
+
+.eightbit-btn:after {
+  left: -6px;
+  top: 0;
+  border-left: 6px black solid;
+  border-right: 6px black solid;
+}
+
+.eightbit-btn--reset {
+  background: #e76e55;
+  -webkit-box-shadow: inset -4px -4px 0px 0px #8c2022;
+          box-shadow: inset -4px -4px 0px 0px #8c2022;
+}
+
+.eightbit-btn--reset:hover, .eightbit-btn--reset:focus {
+  background: #ce372b;
+  -webkit-box-shadow: inset -6px -6px 0px 0px #8c2022;
+          box-shadow: inset -6px -6px 0px 0px #8c2022;
+}
+
+.eightbit-btn--reset:active {
+  -webkit-box-shadow: inset 4px 4px 0px 0px #8c2022;
+          box-shadow: inset 4px 4px 0px 0px #8c2022;
+}
+
+.eightbit-btn--proceed {
+  background: #f7d51d;
+  -webkit-box-shadow: inset -4px -4px 0px 0px #e59400;
+          box-shadow: inset -4px -4px 0px 0px #e59400;
+}
+
+.eightbit-btn--proceed:hover, .eightbit-btn--proceed:focus {
+  background: #f2c409;
+  -webkit-box-shadow: inset -6px -6px 0px 0px #e59400;
+          box-shadow: inset -6px -6px 0px 0px #e59400;
+}
+
+.eightbit-btn--proceed:active {
+  -webkit-box-shadow: inset 4px 4px 0px 0px #e59400;
+          box-shadow: inset 4px 4px 0px 0px #e59400;
+}
+
+.bodyInicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.bodyInicio .container-inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #ecca08;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
+}
+
+.bodyInicio .container-inicio-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyInicio .container-inicio-titulo h1 {
+  font-size: 48px;
+}
+
+.bodyInicio .container-inicio-boton {
+  margin: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

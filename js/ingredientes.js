@@ -39,6 +39,7 @@ function loadDoc() {
                                     <b> $ ${productos[i].precio} </b>
                                 </div>
                                 <button id=boton${productos[i].id} onclick="agregarAlCarrito(${productos[i].id})" type="button" class="btn btn-outline-warning ">Agregar</button>
+                                <a href="javascript:void(0)" id=boton${productos[i].id} onclick="agregarAlCarrito(${productos[i].id})" class="eightbit-btn eightbit-btn--proceed">Agregar</a>
                             </div>
                         </div>`)
         };

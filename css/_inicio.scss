@@ -1,0 +1,47 @@
+.sectionIngredientes{
+    height: fit-content;
+
+    #principal {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: rgb(236, 202, 8);
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 5px double black;
+        border-radius: 30px;
+
+        .principal__cards {
+            display: flex;
+            justify-content: space-around;
+            
+            &__contenedor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.btn{
+    display: none;
+}
+
+.boton-eliminar img{
+    width: 30px;
+    height: 30px;
+}
+
+#boton-carrito img{
+    width: 30px;
+    height: 30px;
+}
+
+.modal-carrito{
+    display: none;
+}
