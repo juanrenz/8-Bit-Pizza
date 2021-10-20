@@ -4,7 +4,7 @@
 	 "nombre":"Mozzarella",
 	 "precio": 50,
 	 "caracteristica": "", 
-	 "img": "",  
+	 "img": "https://curiosfera-recetas.com/wp-content/uploads/2021/01/Queso-Mozzarella.jpg",  
 	 "cantidad": 1
 	},
 
@@ -13,7 +13,7 @@
 	 "nombre": "Roquefort",
 	 "precio": 60,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://infoagro.com.ar/wp-content/uploads/2020/12/queso-roquefort-7.jpg",  
 	 "cantidad": 1 
 	},
 
@@ -22,7 +22,7 @@
 	 "nombre": "Cheddar",
 	 "precio": 50,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://i1.wp.com/commememucho.com/wp-content/uploads/2020/01/queso-cheddar-1.jpg",  
 	 "cantidad": 1
 	},
 
@@ -31,7 +31,7 @@
 	 "nombre": "Salsa de tomate",
 	 "precio": 30,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://t1.uc.ltmcdn.com/images/0/2/9/como_hacer_salsa_de_tomate_para_pizza_50920_600_square.jpg",  
 	 "cantidad": 1 
 	},
 
@@ -40,7 +40,7 @@
 	 "nombre": "Salsa Blanca",
 	 "precio": 50,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://www.recetasderechupete.com/wp-content/uploads/2021/04/Salsa-veloute-768x530.jpg",  
 	 "cantidad": 1
 	},
 
@@ -49,7 +49,7 @@
 	 "nombre": "Panceta",
 	 "precio": 80,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://static.vix.com/es/sites/default/files/styles/large/public/imj/vivirsalud/L/Los-5-peores-alimentos-para-comer-en-el-desayuno-cuando-queremos-adelgazar-6.jpg",  
 	 "cantidad": 1 
 	},
 
@@ -58,7 +58,7 @@
 	 "nombre": "Huevo",
 	 "precio": 20,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://www.cookforyourlife.org/wp-content/uploads/2020/06/Hard-Boiled-Eggs-shutterstock_451345444.jpg",  
 	 "cantidad": 1 
 	},
 
@@ -67,16 +67,16 @@
 	 "nombre": "Champignones",
 	 "precio": 60,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://www.pilardetodos.com.ar/media/k2/items/cache/817e51b961c2b246c5a849bae519bc08_XL.jpg",  
 	 "cantidad": 1
 	},
 	
 	{
 	 "id": 9,
-	 "nombre": "Espinaca",
+	 "nombre": "Rucula",
 	 "precio": 30,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://okdiario.com/img/2021/02/23/ensalada-de-rucula.jpg",  
 	 "cantidad": 1
 	},
 
@@ -85,7 +85,7 @@
 	 "nombre": "Pepperoni",
 	 "precio": 50,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://lagarnachairapuato.com/wp-content/uploads/2020/10/Salami.jpg",  
 	 "cantidad": 1
 	},
 
@@ -94,7 +94,7 @@
 	 "nombre": "Cebolla",
 	 "precio": 15,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5819aaca5cafe8293a3ff0a6/cebolla-cancer_1.jpg",  
 	 "cantidad": 1
 	},
 
@@ -103,7 +103,7 @@
 	 "nombre": "Pimientos",
 	 "precio": 30,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://www.nutricienta.com/imagenes/alimentos/alimento-nutricienta-pimiento-rojo.png",  
 	 "cantidad": 1
 	},
 
@@ -112,7 +112,7 @@
 	 "nombre": "Pollo",
 	 "precio": 70,
 	 "caracteristica": "",  
-	 "img": "",  
+	 "img": "https://placeralplato.com/files/2020/06/pizza-de-pollo-640x480.jpg?width=1200&enable=upscale",  
 	 "cantidad": 1
 	},
 
@@ -121,7 +121,7 @@
 	 "nombre": "Verduras Asadas",
 	 "precio": 40,
 	 "caracteristica": "", 
-	 "img": "", 
+	 "img": "https://www.hola.com/imagenes/cocina/recetas/20200120158493/pizza-casera-vegetal/0-770-783/pizza-vegetariana-m.jpg", 
 	 "cantidad": 1
 	},
 
@@ -130,7 +130,7 @@
 	 "nombre": "Jamon",
 	 "precio": 35,
 	 "caracteristica": "", 
-	 "img": "", 
+	 "img": "https://lh3.googleusercontent.com/proxy/g3_xG5C15e4_lXirrdHnVo8373sqUl5hub8c6UFUzHJJ0eVfWy4QngIW8LMLKJ1GZzmiAOXYKxnNV_Q7Ds5q-kZ2mL9R1rRZyL72y2j7IbYBtCwjrwiC_pU1I6OSLUKDJJUIJKm9BWU", 
 	 "cantidad": 1
 	},
 
@@ -139,7 +139,7 @@
 	 "nombre": "Tomate Deshidratado",
 	 "precio": 30,
 	 "caracteristica": "", 
-	 "img" : "", 
+	 "img" : "https://www.nutricienta.com/imagenes/alimentos/alimento-nutricienta-tomate-seco.jpg", 
 	 "cantidad": 1
 	},
 
@@ -148,7 +148,7 @@
 	 "nombre": "Aceitunas",
 	 "precio": 10,
 	 "caracteristica": "", 
-	 "img": "", 
+	 "img": "https://cope-cdnmed.agilecontent.com/resources/jpg/3/0/1592544273403.jpg", 
 	 "cantidad": 1
 	},
 
@@ -157,7 +157,7 @@
 	 "nombre": "Palmitos",
 	 "precio": 40,
 	 "caracteristica": "", 
-	 "img": "", 
+	 "img": "https://srecetas.es/system/images/2556/full.pizza-de-palmitos.jpg", 
 	 "cantidad": 1
 	}
 ]

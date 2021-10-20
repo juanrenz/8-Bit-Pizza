@@ -11,152 +11,6 @@ body {
   height: 100%;
 }
 
-.sectionIngredientes {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.sectionIngredientes #principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #ecca08;
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  border: 5px double black;
-  border-radius: 30px;
-}
-
-.sectionIngredientes #principal .principal__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.sectionIngredientes #principal .principal__cards__contenedor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-
-.btn {
-  display: none;
-}
-
-.boton-eliminar img {
-  width: 30px;
-  height: 30px;
-}
-
-#boton-carrito img {
-  width: 30px;
-  height: 30px;
-}
-
-.modal-carrito {
-  display: none;
-}
-
-.header {
-  background-color: bisque;
-  margin: 0.313rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__boton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-}
-
-.header__boton button {
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.header__boton button img {
-  width: 50px !important;
-  height: 45px !important;
-  margin: 0.15rem !important;
-  margin-right: 0.313rem !important;
-}
-
-.navbar {
-  background-color: #ecca08;
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  border: 5px double black;
-  border-radius: 30px;
-}
-
-.footer {
-  background-color: bisque;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 00.313rem;
-}
-
-.footer__barraRedesSociales__logos {
-  margin: 00.313rem;
-}
-
-.footer__barraRedesSociales__logos img {
-  height: 30px;
-  width: 30px;
-}
-
-.page-section {
-  background-color: #ecca08;
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border: 5px double black;
-  border-radius: 30px;
-}
-
 .eightbit-btn {
   background: #92cd41;
   display: inline-block;
@@ -300,5 +154,163 @@ body {
 
 .bodyInicio .container-inicio-boton {
   margin: 1rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecca08;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
+}
+
+.header .navbar {
+  width: 100%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecca08;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
+}
+
+.footer__barraRedesSociales__logos {
+  margin: 00.313rem;
+}
+
+.footer__barraRedesSociales__logos img {
+  height: 30px;
+  width: 30px;
+}
+
+.page-section {
+  background-color: #ecca08;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
+}
+
+.sectionIngredientes {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sectionIngredientes #principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #ecca08;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 5px double black;
+  border-radius: 30px;
+}
+
+.sectionIngredientes #principal .principal__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sectionIngredientes #principal .principal__cards__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionIngredientes #principal .principal__cards__contenedor .card {
+  padding: 5px;
+  border: solid 2px black;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33rem;
+  margin: 5px;
+}
+
+.sectionIngredientes #principal .principal__cards__contenedor .card .eightbit-btn {
+  width: 12rem;
+  margin: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 14px;
+  color: black;
+}
+
+.sectionIngredientes #principal .principal__cards__contenedor .card img {
+  width: 20rem;
+  height: 17rem;
+  border-radius: 10px;
+  border: dotted 2px black;
+}
+
+.btn {
+  display: none;
+}
+
+.boton-eliminar img {
+  width: 30px;
+  height: 30px;
+}
+
+#boton-carrito img {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-carrito {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
