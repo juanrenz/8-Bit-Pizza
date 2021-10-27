@@ -1,17 +1,37 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(236, 202, 8);
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-top: 1rem;
     padding: 1rem;
     border: 5px double black;
-    border-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 
-    .navbar{
-        
+    .navbar {
+        background-color: rgb(236, 202, 8) !important;
         width: 100%;
+
+        #boton-carrito {
+            background-color: dimgray!important;
+            padding: 5px;
+            border: dotted black 2px;
+            border-radius: 10px;
+            margin-left: 5px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                padding-right: 3px;
+            }
+        }
     }
+}
+
+
+.boton-eliminar img {
+    width: 30px;
+    height: 30px;
 }

@@ -1,4 +1,51 @@
-.sectionIngredientes{
+.descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(236, 202, 8);
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 5px double black;
+    border-radius: 30px;
+
+    h3{
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    &-contenedor {
+        display: flex;
+        background-color: rgb(206, 176, 7);
+        padding: 10px;
+        border-radius: 30px;
+        border: dotted 2px black;
+        justify-content: space-around;
+
+        .descripcion-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 42%;
+            
+            
+            p{
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+
+        .carousel {
+            width: fit-content;
+
+        }
+    }
+}
+
+.sectionIngredientes {
     height: fit-content;
 
     #principal {
@@ -17,15 +64,14 @@
         .principal__cards {
             display: flex;
             justify-content: space-around;
-            
+
             &__contenedor {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-bottom: 1rem;
-                
 
-                .card{
+                .card {
                     padding: 5px;
                     border: solid 2px black;
                     border-radius: 15px;
@@ -34,7 +80,11 @@
                     height: 33rem;
                     margin: 5px;
 
-                    .eightbit-btn{
+                    .btn {
+                        display: none;
+                    }
+
+                    .eightbit-btn {
                         width: 12rem;
                         margin: 5px;
                         height: fit-content;
@@ -42,7 +92,7 @@
                         color: black;
                     }
 
-                    img{
+                    img {
                         width: 20rem;
                         height: 17rem;
                         border-radius: 10px;
@@ -54,20 +104,6 @@
     }
 }
 
-.btn{
-    display: none;
-}
-
-.boton-eliminar img{
-    width: 30px;
-    height: 30px;
-}
-
-#boton-carrito img{
-    width: 30px;
-    height: 30px;
-}
-
-.modal-carrito{
+.modal-carrito {
     display: none;
 }

@@ -7,7 +7,9 @@
     margin-top: 1rem;
     padding: 1rem;
     border: 5px double black;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    clear: both;
 
     &__barraRedesSociales {
 

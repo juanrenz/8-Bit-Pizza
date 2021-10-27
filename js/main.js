@@ -40,6 +40,7 @@ function agregarAlCarrito(id) {
         botonEliminar.addEventListener('click', ()=>{
             botonEliminar.parentElement.remove()
             carritoDeCompras = carritoDeCompras.filter(prodE => prodE.id != productoAgregar.id)
+            alertify.notify('Eliminado!','custom');
             actualizarCarrito()
         }) 
     }
@@ -56,9 +57,25 @@ let botonVaciar = document.getElementById("vaciarCarrito");
 botonVaciar.addEventListener("click", vaciarCarrito);
 
 function vaciarCarrito() {
-    carritoDeCompras = [];
-    contenedorCarrito.innerHTML = "";
-    actualizarCarrito();
+    swal({
+        title: "Estas seguro?",
+        text: "Te vas a perder una gran pizza!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Se vació tu carrito", {
+            icon: "success",
+          });
+          carritoDeCompras = [];
+          contenedorCarrito.innerHTML = "";
+          actualizarCarrito();
+        } else {
+          swal("Si!! Tu pizza sigue intacta");
+        }
+      });
 }
 
 /* FORM */
@@ -95,5 +112,8 @@ function enviar(e) {
         localStorage.setItem('contacto', JSON.stringify(formulario));
     }
     
+    alertify.success('Consulta enviada! Gracias por contactarte');
     $("#contactForm").trigger("reset");
-} 
+}
+
+alertify.set('notifier','position', 'top-right');
