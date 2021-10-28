@@ -29,9 +29,10 @@ function agregarAlCarrito(id) {
         actualizarCarrito()
         let div = document.createElement('div')
         div.classList.add('productoEnCarrito')
-        div.innerHTML = `<p>${productoAgregar.nombre}</p>
-                        <p>Precio: ${productoAgregar.precio}</p>
-                        <p id="cantidad${productoAgregar.id}">cantidad: ${productoAgregar.cantidad}</p>
+        div.innerHTML = `<p class = "textoModal">${productoAgregar.nombre}</p>
+                        <p class = "textoModal">Precio: ${productoAgregar.precio}</p>
+                        <p class = "textoModal" id="cantidad${productoAgregar.id}">Cantidad: ${productoAgregar.cantidad}</p>
+                        <img class="imgProducto" src="${productoAgregar.img}" alt="">
                         <button id="eliminar${productoAgregar.id}" class="boton-eliminar"><img src="https://w7.pngwing.com/pngs/392/540/png-transparent-pixel-c-pixel-art-waste-openbsd-garbage-miscellaneous-angle-furniture.png" alt="boton-eliminar" srcset=""></button>`
         contenedorCarrito.appendChild(div)
         
@@ -116,4 +117,3 @@ function enviar(e) {
     $("#contactForm").trigger("reset");
 }
 
-alertify.set('notifier','position', 'top-right');

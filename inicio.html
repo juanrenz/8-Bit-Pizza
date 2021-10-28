@@ -18,8 +18,12 @@
 
 <body>
     <header class="header">
+        <div class="logo-header">
+            <img class="gif" src="https://lh3.googleusercontent.com/proxy/hCCG_yo3n8znWZH1Kurn6amMBSGnYhc68ZEDh4L1D1fVrwK8N2sf7a3la7ROA45-VW3vudFSCrTNLJvZbi0ENdq27dM9TBd9MJBqjOucGCMb6PVXaSoOg0RnPovJ84H3cuELVn7R9XL6sQim6frkDhcbjHmZsYjH1Rmd_A" alt="gif-pizza-baila" srcset="">
+            <a class="navbar-brand" href="#"><img src="img/logo-8-Bit.png" alt=""></a>
+            <img class="gif" src="https://lh3.googleusercontent.com/proxy/hCCG_yo3n8znWZH1Kurn6amMBSGnYhc68ZEDh4L1D1fVrwK8N2sf7a3la7ROA45-VW3vudFSCrTNLJvZbi0ENdq27dM9TBd9MJBqjOucGCMb6PVXaSoOg0RnPovJ84H3cuELVn7R9XL6sQim6frkDhcbjHmZsYjH1Rmd_A" alt="gif-pizza-baila" srcset="">
+        </div>    
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar w/ text</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,25 +31,26 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#inicio">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#principal">Arma tu pizza</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
                 <span class="navbar-text">
                     Carrito
+                    <div class="header__boton">
+                        <button id="boton-carrito"  type="button" data-toggle="modal"
+                            data-target="#exampleModal"><img
+                                src="https://thumbs.gfycat.com/ElderlyPhonyAegeancat-size_restricted.gif"
+                                alt="carrito"><span id="contadorCarrito">0</span></button>
+                    </div>
                 </span>
             </div>
-            <div class="header__boton">
-                <button id="boton-carrito"  type="button" data-toggle="modal"
-                    data-target="#exampleModal"><img
-                        src="https://ouch-cdn2.icons8.com/2EGnAoGEHI_PyV8BMyqoGplCb10KcSIrc2prfUMEgSM/rs:fit:784:617/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzAv/OGJkYjA4OGEtNjA2/My00NzRjLTk2MTkt/ZWQ2NTgwZWJkNjMz/LnN2Zw.png"
-                        alt="carrito"><span id="contadorCarrito">0</span></button>
-            </div>
+
         </nav>
     </header>
     <!-- Modal -->
@@ -84,7 +89,7 @@
         </div>
     </div>
 
-    <section class="descripcion">
+    <section id="inicio" class="descripcion">
         <h3>Bienvenidos!!</h3>
         
         <div class="descripcion-contenedor" >
@@ -109,6 +114,10 @@
     </section>
 
     <section class="sectionIngredientes">
+        <div class="titulos">
+            <h5>Ingredientes</h5>
+            <p>Elegi tus preferidos, podemos armar tu pizza como mas te guste!</p>
+        </div>
         <div id="principal">
             <!-- `<div class="principal__cards__contenedor">
                 <div class="card" style="width: 18rem;">
@@ -201,6 +210,7 @@
     <script src="js/ingredientes.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
 
     <!-- Script bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"

@@ -30,7 +30,7 @@ function loadDoc() {
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
         for (let i = 0; i < productos.length; i++) {
-            $("#principal").prepend( `<div class="principal__cards__contenedor">
+            $("#principal").append( `<div class="principal__cards__contenedor">
                             <div class="card" style="width: 23rem;">
                                 <img class="card-img-top" src="${productos[i].img}" alt="Card image cap">
                                 <div class="card-body">

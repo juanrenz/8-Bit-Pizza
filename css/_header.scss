@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(236, 202, 8);
@@ -11,15 +12,42 @@
     border-bottom-right-radius: 30px;
 
     .navbar {
-        background-color: rgb(236, 202, 8) !important;
+        background-color: #ecca08 !important;
         width: 100%;
+        font-size: 16px;
+        display: flex;
+        align-items: flex-end;
+
+        .collapse {
+            align-items: flex-end;
+
+            .navbar-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-link {
+                font-size: 14px;
+                padding: 6px;
+                transition: 0.5s ease;
+                border: 3px dotted transparent;
+                margin: 3px;
+            }
+
+            .nav-link:hover {
+                border: 3px dotted black;
+                padding: 6px;
+                margin: 3px;
+            }
+        }
 
         #boton-carrito {
-            background-color: dimgray!important;
+            background-color: rgb(255, 255, 255) !important;
             padding: 5px;
-            border: dotted black 2px;
+            transition: 0.5s ease;
+            border: dotted transparent 2px;
             border-radius: 10px;
-            margin-left: 5px;
 
             img {
                 width: 30px;
@@ -27,9 +55,55 @@
                 padding-right: 3px;
             }
         }
+
+        #boton-carrito:hover{
+            border: 2px dotted black;
+        }
+    }
+
+    .logo-header {
+        display: flex;
+        align-items: center;
+
+        .navbar-brand {
+            margin: 5px !important;
+            padding: 0px !important;
+        }
+
+        img {
+            height: 15rem;
+            width: 30rem;
+        }
+
+        .gif {
+            height: 6rem;
+            width: 6rem;
+            border-radius: 100px;
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .menu-fixed {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 120rem;
+        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+        border: double black 2px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        animation: mymove 0.2s ease-in-out;
+
+        @keyframes mymove {
+            from {
+                top: -20px;
+            }
+            to {
+                top: 0px;
+            }
+        }
     }
 }
-
 
 .boton-eliminar img {
     width: 30px;
