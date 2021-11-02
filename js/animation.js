@@ -28,4 +28,21 @@ $(document).ready(function () {
     });
 });
 
+//confirma compra
+
+$("#botonConfirmar").click(notiConfirmacion)
+
+function notiConfirmacion() {
+    swal({
+        title: "Gracias por tu compra!",
+        text: "Tu pedido ya se esta preparando!",
+        icon: "success",
+        button: "Yesssss!",
+      });
+
+      carritoDeCompras = [];
+      contenedorCarrito.innerHTML = "";
+      actualizarCarrito();   
+}
+
 alertify.set('notifier', 'position', 'top-right');

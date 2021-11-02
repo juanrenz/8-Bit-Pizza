@@ -316,6 +316,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -330,13 +334,43 @@ body {
   clear: both;
 }
 
+.footer__descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__barraRedesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer__barraRedesSociales__logos {
-  margin: 00.313rem;
+  margin: 0.5rem;
 }
 
 .footer__barraRedesSociales__logos img {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.footer__barraRedesSociales__logos img:hover {
+  -webkit-box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.75);
 }
 
 .page-section {
@@ -591,6 +625,8 @@ body {
           align-items: center;
   height: 33rem;
   margin: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sectionIngredientes #principal .principal__cards__contenedor .card .btn {
@@ -612,6 +648,11 @@ body {
   height: 17rem;
   border-radius: 10px;
   border: dotted 2px black;
+}
+
+.sectionIngredientes #principal .card:hover {
+  -webkit-box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 25px 7px rgba(0, 0, 0, 0.75);
 }
 
 .modal-carrito {
@@ -706,5 +747,29 @@ body {
   height: 90px;
   width: 90px;
   padding: 5px;
+}
+
+.swal-modal {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 5px dotted black;
+  border-radius: 30px;
+}
+
+.swal-modal .swal-title {
+  color: black;
+}
+
+.swal-modal .swal-text {
+  color: #1f1f1f;
+}
+
+.swal-modal .swal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

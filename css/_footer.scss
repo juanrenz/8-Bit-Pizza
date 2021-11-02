@@ -1,5 +1,6 @@
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: rgb(236, 202, 8);
     margin-left: 8rem;
@@ -11,14 +12,28 @@
     border-top-right-radius: 30px;
     clear: both;
 
+    &__descripcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__barraRedesSociales {
+        display: flex;
+        justify-content: center;
 
         &__logos {
-            margin: 00.313rem;
+            margin: 0.5rem;
 
             img {
-                height: 30px;
-                width: 30px;
+                height: 35px;
+                width: 35px;
+                transition: all 0.3s;
+                border-radius: 5px;
+            }
+
+            img:hover{
+                box-shadow: 0px 0px 25px 7px rgba(0,0,0,0.75);
             }
         }
     }

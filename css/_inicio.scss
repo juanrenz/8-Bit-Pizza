@@ -89,6 +89,7 @@
         .principal__cards {
             display: flex;
             justify-content: space-around;
+            
 
             &__contenedor {
                 display: flex;
@@ -104,6 +105,7 @@
                     align-items: center;
                     height: 33rem;
                     margin: 5px;
+                    transition: all 0.3s;
 
                     .btn {
                         display: none;
@@ -125,6 +127,10 @@
                     }
                 }
             }
+        }
+
+        .card:hover{
+            box-shadow: 0px 0px 25px 7px rgba(0,0,0,0.75);
         }
     }
 }

@@ -49,3 +49,22 @@
     }
 }
 
+.swal-modal{
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 5px dotted black;
+    border-radius: 30px;
+
+    .swal-title{
+        color: black;
+    }
+
+    .swal-text{
+        color: rgb(31, 31, 31);
+    }
+
+    .swal-footer{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -19,10 +19,11 @@
 <body>
     <header class="header">
         <div class="logo-header">
-            <img class="gif" src="https://lh3.googleusercontent.com/proxy/hCCG_yo3n8znWZH1Kurn6amMBSGnYhc68ZEDh4L1D1fVrwK8N2sf7a3la7ROA45-VW3vudFSCrTNLJvZbi0ENdq27dM9TBd9MJBqjOucGCMb6PVXaSoOg0RnPovJ84H3cuELVn7R9XL6sQim6frkDhcbjHmZsYjH1Rmd_A" alt="gif-pizza-baila" srcset="">
+            <img class="gif" src="https://i.gifer.com/9E4C.gif" alt="gif-pizza-baila" srcset="">
             <a class="navbar-brand" href="#"><img src="img/logo-8-Bit.png" alt=""></a>
-            <img class="gif" src="https://lh3.googleusercontent.com/proxy/hCCG_yo3n8znWZH1Kurn6amMBSGnYhc68ZEDh4L1D1fVrwK8N2sf7a3la7ROA45-VW3vudFSCrTNLJvZbi0ENdq27dM9TBd9MJBqjOucGCMb6PVXaSoOg0RnPovJ84H3cuELVn7R9XL6sQim6frkDhcbjHmZsYjH1Rmd_A" alt="gif-pizza-baila" srcset="">
-        </div>    
+            <img class="gif" style="transform: scaleX(-1);" src="https://i.gifer.com/9E4C.gif" alt="gif-pizza-baila"
+                srcset="">
+        </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +44,7 @@
                 <span class="navbar-text">
                     Carrito
                     <div class="header__boton">
-                        <button id="boton-carrito"  type="button" data-toggle="modal"
-                            data-target="#exampleModal"><img
+                        <button id="boton-carrito" type="button" data-toggle="modal" data-target="#exampleModal"><img
                                 src="https://thumbs.gfycat.com/ElderlyPhonyAegeancat-size_restricted.gif"
                                 alt="carrito"><span id="contadorCarrito">0</span></button>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     <button id="vaciarCarrito" class="btn btn-secondary">Vaciar</button>
-                    <button type="button" class="btn btn-primary">Confirmar Compra</button>
+                    <button type="button" id="botonConfirmar" class="btn btn-primary">Confirmar Compra</button>
                 </div>
             </div>
         </div>
@@ -91,26 +91,35 @@
 
     <section id="inicio" class="descripcion">
         <h3>Bienvenidos!!</h3>
-        
-        <div class="descripcion-contenedor" >
+
+        <div class="descripcion-contenedor">
             <div class="descripcion-texto">
-                <p>Esto es 8-Bit Pizza. Nacemos desde la necesidad de desarrollar una pagina web la cual permita demostrar los conocimientos de JavaScript durante el curso de desarrollo frontend realizado en CoderHouse</p>
-                <p>La seleccion de diferentes ingredientes, filtros para diferenciarlos, agregar estos al carrito de compra son algunos de los ejemplos de funcionalidades que se utilizaron (Ademas del hambre que dió llevarlo a cabo :) )</p>
+                <p>Esto es 8-Bit Pizza. Nacemos desde la necesidad de desarrollar una pagina web la cual permita
+                    demostrar los conocimientos de JavaScript durante el curso de desarrollo frontend realizado en
+                    CoderHouse</p>
+                <p>La seleccion de diferentes ingredientes, filtros para diferenciarlos, agregar estos al carrito de
+                    compra son algunos de los ejemplos de funcionalidades que se utilizaron (Ademas del hambre que dió
+                    llevarlo a cabo :) )</p>
             </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://www.circuitogastronomico.com/wp-content/uploads/2021/03/FORTUNATO-1-800x600.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://www.cronista.com/files/image/294/294850/5ffe08e9d7391.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/06/pizzeria2.jpg" alt="Third slide">
-                </div>
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://www.circuitogastronomico.com/wp-content/uploads/2021/03/FORTUNATO-1-800x600.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://www.cronista.com/files/image/294/294850/5ffe08e9d7391.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/06/pizzeria2.jpg"
+                            alt="Third slide">
+                    </div>
                 </div>
             </div>
-        </div>   
+        </div>
     </section>
 
     <section class="sectionIngredientes">
@@ -184,17 +193,29 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__barraRedesSociales__logos">
-            <a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/png/512/87/87390.png"
-                    alt="logoInstagram"></a>
+        <div class="footer__descripcion">
+         <h3>
+            SOBRE MI
+         </h3>
+         <p>Me conocen por <strong>Juan Renz</strong>, y soy de Córdoba.</p>
+         <p><strong>Developer en progreso </strong>, desde hace un par de años con el deseo de serlo y muy contento de estar haciendolo realidad</p>
+         <p>El objetivo de esta Web es aplicar lo aprendido durante el bloque JavaScript del curso Frontend Developer de CoderHouse</p>
         </div>
-        <div class="footer__barraRedesSociales__logos">
-            <a href="https://es-la.facebook.com"><img src="https://image.flaticon.com/icons/png/512/1051/1051360.png"
-                    alt="logoFacebook"></a>
-        </div>
-        <div class="footer__barraRedesSociales__logos">
-            <a href=""><img src="https://image.flaticon.com/icons/png/512/1384/1384023.png" alt="logoWhatsapp"></a>
-        </div>
+        <div class="footer__barraRedesSociales">
+            <div class="footer__barraRedesSociales__logos">
+                <a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/png/512/87/87390.png"
+                        alt="logoInstagram"></a>
+            </div>
+            <div class="footer__barraRedesSociales__logos">
+                <a href="https://es-la.facebook.com"><img src="https://image.flaticon.com/icons/png/512/1051/1051360.png"
+                        alt="logoFacebook"></a>
+            </div>
+            <div class="footer__barraRedesSociales__logos">
+                <a href=""><img src="https://image.flaticon.com/icons/png/512/1384/1384023.png" alt="logoWhatsapp"></a>
+            </div>
+            <div class="footer__barraRedesSociales__logos">
+                <a href="https://www.linkedin.com/in/juan-augusto-renz-827a19145/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png" alt="logoLkdIn"></a>
+            </div>
         </div>
     </footer>
 
